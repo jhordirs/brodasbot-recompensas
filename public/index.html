@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRODAS Bot - Recompensas</title>
+  <!-- Favicon local -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="header-container">
+        <h1>BRODAS Bot - Recompensas</h1>
+      </div>
+    </header>
+    
+    <div class="main-container">
+      <div class="container">
+        <div class="left-column">
+          <div class="card">
+            <h2>Servidor</h2>
+            <select id="server-select" class="dropdown">
+              <option value="" disabled selected>Selecciona un servidor</option>
+            </select>
+            
+            <h2>Canal</h2>
+            <select id="channel-select" class="dropdown">
+              <option value="">Selecciona un servidor primero</option>
+            </select>
+            
+                      
+            <div class="text-inputs">
+              <h2>Texto superior</h2>
+              <textarea id="header-text" placeholder="Texto que aparecerá arriba en el embed"></textarea>
+              <div class="mention-buttons">
+                <button class="btn-small btn-role" data-target="header-text">Rol</button>
+                <button class="btn-small btn-member" data-target="header-text">Miembro</button>
+                <button class="btn-small btn-emoji" data-target="header-text">Emote</button>
+              </div>
+              
+              <h2>Texto inferior</h2>
+              <textarea id="footer-text" placeholder="Texto que aparecerá abajo en el embed"></textarea>
+              <div class="mention-buttons">
+                <button class="btn-small btn-role" data-target="footer-text">Rol</button>
+                <button class="btn-small btn-member" data-target="footer-text">Miembro</button>
+                <button class="btn-small btn-emoji" data-target="footer-text">Emote</button>
+              </div>
+            </div>
+            
+            <button id="send-btn" class="btn-send">Enviar</button>
+          </div>
+        </div>
+        
+        <div class="right-column">
+          <div class="card">
+            <div class="member-header">
+              <h2>SISTEMA DE RECOMPENSAS</h2>
+              <div>
+                <button id="add-member-btn" class="btn-add">+Miembro</button>
+                <button id="add-role-btn" class="btn-add">+Rol</button>
+              </div>
+            </div>
+            
+            <div id="members-list" class="members-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modales -->
+  <div id="member-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Seleccionar miembro</h2>
+      <input type="text" id="search-member" placeholder="Buscar miembro..." class="search-input">
+      <div id="members-container" class="members-container"></div>
+    </div>
+  </div>
+  
+  <div id="role-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Seleccionar rol</h2>
+      <input type="text" id="search-role" placeholder="Buscar rol..." class="search-input">
+      <div id="roles-container" class="members-container"></div>
+    </div>
+  </div>
+  
+  <div id="mention-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="mention-title">Seleccionar</h2>
+      <input type="text" id="search-mention" placeholder="Buscar..." class="search-input">
+      <div id="mention-container" class="members-container"></div>
+    </div>
+  </div>
+  
+  <script src="/js/script.js"></script>
+</body>
+</html>
