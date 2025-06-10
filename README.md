@@ -44,11 +44,11 @@ Cualquier cambio que se haga de manera local, incluyendo modificaciones a la bas
 
 # Verificaciones:
 
-1- Ejecutar **git remote -v** para verificar que esté vinculado al repositorio correcto: **https://github.com/jhordirs/brodasbot-mensajes.git**.
+1- Ejecutar **git remote -v** para verificar que esté vinculado al repositorio correcto: **https://github.com/jhordirs/brodasbot-recompensas.git**.
 
-2- Ejecutar **git remote add origin https://github.com/jhordirs/brodasbot-mensajes.git** para vincular el proyecto con el repositorio.
+2- Ejecutar **git remote add origin https://github.com/jhordirs/brodasbot-recompensas.git** para vincular el proyecto con el repositorio.
 
-3- Ejecutar **git remote set-url https://github.com/jhordirs/brodasbot-mensajes.git** para actualizar el repositorio del proyecto si es que cuenta con otro.
+3- Ejecutar **git remote set-url https://github.com/jhordirs/brodasbot-recompensas.git** para actualizar el repositorio del proyecto si es que cuenta con otro.
 
 # Notas:
 
